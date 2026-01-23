@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Idea Board</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">IdeaBoard</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Explore</a>
+      <button id="addIdeaBtn" class="btn-green">Add Idea</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Turn Your Ideas Into Reality</h2>
+    <p>Share, Learn and Build Together</p>
+    <button class="btn-green" id="getStarted">Get Started</button>
+  </section>
+
+
+  <main class="container" id="dashboard">
+    <h2>Idea Feed</h2>
+    <div id="ideaList" class="idea-list"></div>
+    <p id="emptyState" class="empty">No ideas yet. Be the first one to add!</p>
+  </main>
+
+  <div class="modal" id="ideaModal">
+    <form class="idea-form" id="ideaForm">
+      <h3>Add Idea</h3>
+
+      <input type="text" id="title" placeholder="Idea Title" required />
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input type="text" id="tags" placeholder="Tags (comma separated)" />
+      
+      <select id="category">
+        <option>Technology</option>
+        <option>Education</option>
+        <option>Health</option>
+        <option>Business</option>
+      </select>
+
+      <button class="btn-green" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2026 Student Idea Board</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
