@@ -71,6 +71,8 @@ body {
   gap: 20px;
 }
 
+
+
 .idea-card {
   background: white;
   padding: 20px;
@@ -135,4 +137,20 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
+
+
+
+.kaka{
+    background-color: #ef4444;
+}
+
+#no {
+    background-color: #3b82f6;
+}
+

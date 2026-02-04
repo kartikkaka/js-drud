@@ -16,7 +16,7 @@ const saveIdeas = () => {
   localStorage.setItem("ideas", JSON.stringify(ideas));
   renderIdeas();
 };
-
+ 
 
 const openModal = () => (modal.style.display = "flex");
 const closeModal = () => (modal.style.display = "none");
@@ -86,8 +86,14 @@ const renderIdeas = () => {
 
 
     card.querySelector(".like").addEventListener("click", () => {
-      ideas[index].likes++;
-      saveIdeas();
+      if (likes === 0) {
+        ideas[index].likes++;
+        saveIdeas();
+        
+      }else if (likes > 0) {
+        ideas[index].likes--;
+        saveIdeas();
+      }
     });
 
 
